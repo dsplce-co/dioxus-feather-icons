@@ -9,5 +9,6 @@ exclude = [
     "assets/icons/original",
     "utils"
 ]
+repository = "https://github.com/dsplce-co/dioxus-feather-icons"
 
 [dependencies]
