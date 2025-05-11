@@ -20,7 +20,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-dioxus-feather-icons = "0.1.2"
+dioxus-feather-icons = "0.2.0"
 ```
 This crate requires Rust 2024 edition.
 
@@ -64,16 +64,16 @@ fn App() -> Element {
 }
 ```
 
-**🎨 Set a specific color:**
+**🎨 Set a specific size:**
 
 ```rust 
-icon!(alert_circle, "red")
+icon!(alert_circle, 48)
 ```
 
-**📐 Customize color and size:**
+**📐 Customize size and color:**
 
 ```rust
-icon!(camera, "#333", 32)
+icon!(camera, 32, "#333")
 ```
 
 ### 3. Access Raw SVG String (if needed)
