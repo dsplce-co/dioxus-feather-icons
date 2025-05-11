@@ -19,7 +19,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-dioxus-feather-icons = "0.1.1"
+dioxus-feather-icons = "0.1.2"
 ```
 This crate requires Rust 2024 edition.
 
@@ -27,7 +27,7 @@ This crate requires Rust 2024 edition.
 
 ## 🗂️ Icons Included
 
-The crate includes a curated set of Feather .svg files and a bundled _sprite.svg. You do not need to download or manage the icons yourself.
+The crate includes a curated set of Feather .svg files and a bundled `_sprite.svg`. You do not need to download or manage the icons yourself.
 
 ⸻
 
@@ -38,8 +38,8 @@ The crate includes a curated set of Feather .svg files and a bundled _sprite.svg
 To make icons render, you must inject the sprite once in your component tree, ideally toward the end of the body to avoid blocking first paint:
 ```rust
 rsx! {
-  ...
-  dioxus_feather_icons::sprite!()
+  // ...
+  { dioxus_feather_icons::sprite!() }
 }
 ```
 
