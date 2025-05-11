@@ -4,19 +4,19 @@ pub mod prelude;
 
 #[macro_export]
 macro_rules! icon {
-    ($name:ident, $color:expr, $size:expr) => {
+    ($name:ident, $size:expr, $color:expr) => {
         rsx! {
             i {
-                style: format!("color:{};--size:{}px", $color, $size),
+                style: format!("--size:{}px;color:{}", $size, $color),
                 dangerous_inner_html: $crate::icon_str!($name)
             }
         }
     };
-    ($name:ident, $color:expr) => {
-        $crate::icon!($name, $color, 24)
+    ($name:ident, $size:expr) => {
+        $crate::icon!($name, $size, "currentColor")
     };
     ($name:ident) => {
-        $crate::icon!($name, "currentColor")
+        $crate::icon!($name, 24)
     };
 }
 
