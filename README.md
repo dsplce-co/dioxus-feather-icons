@@ -4,9 +4,10 @@
 
 ---
 
-## ✨ Features
+## 🖤 Features
 
 - Render Feather Icons as inline SVG
+- Build-time icon name validation
 - Lightweight and dependency-free
 - Simple macro-based usage with `rsx!`
 - Optimized for performance via SVG sprite injection
@@ -80,6 +81,13 @@ icon!(camera, "#333", 32)
 ```rust
 let svg: &str = icon_str!(zap);
 ```
+
+⸻
+
+## 📁 Links
+
+📦 **Crate:** [https://crates.io/crates/dioxus-feather-icons](https://crates.io/crates/dioxus-feather-icons)<br>
+🛠️ **Repo:** [https://github.com/dsplce-co/dioxus-feather-icons](https://github.com/dsplce-co/dioxus-feather-icons)
 
 ⸻
 
