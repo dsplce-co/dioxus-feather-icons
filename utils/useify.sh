@@ -8,7 +8,7 @@ for filepath in "$SOURCE_DIR"/*.svg; do
   filename=$(basename "$filepath" .svg)
 
   cat > "../src/icons/${filename}.svg" <<EOF
-<svg style="width: var(--size);height: var(--size)">
+<svg style="width:var(--size,24px);height:var(--size,24px)">
   <use href="#${filename}" />
 </svg>
 EOF
