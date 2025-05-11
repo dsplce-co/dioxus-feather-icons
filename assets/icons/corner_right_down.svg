@@ -1,0 +1,3 @@
+<svg style="width: var(--size);height: var(--size)">
+  <use href="#corner_right_down" />
+</svg>

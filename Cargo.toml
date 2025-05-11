@@ -1,0 +1,13 @@
+[package]
+name = "dioxus-feather-icons"
+version = "0.1.1"
+edition = "2024"
+description = "Feather Icons for Dioxus"
+license = "MIT OR Apache-2.0"
+exclude = [
+    ".idea",
+    "assets/icons/original",
+    "utils"
+]
+
+[dependencies]
