@@ -20,7 +20,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-dioxus-feather-icons = "0.2.1"
+dioxus-feather-icons = "0.2.2"
 ```
 This crate requires Rust 2024 edition.
 

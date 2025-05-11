@@ -12,10 +12,10 @@ for filepath in assets/icons/original/*.svg; do
 
   # Read, clean, and transform the SVG content
   cleaned=$(cat "$filepath" | \
-    sed -E 's/ xmlns="[^"]*"//g' | \
-    sed -E 's/ width="[^"]*"//g' | \
-    sed -E 's/ height="[^"]*"//g' | \
-    sed -E 's/ class="[^"]*"//g' | \
+    sed -E 's/ xmlns="[^"]*"//' | \
+    sed -E 's/ width="[^"]*"//' | \
+    sed -E 's/ height="[^"]*"//' | \
+    sed -E 's/ class="[^"]*"//' | \
     sed -E "s/<svg/<symbol id=\"$filename\"/" | \
     sed -E 's/<\/svg>/<\/symbol>/')
 
