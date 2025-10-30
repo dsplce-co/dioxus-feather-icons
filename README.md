@@ -1,3 +1,5 @@
+> We're dsplce.co, check out our work on [github.com/dsplce-co](https://github.com/dsplce-co) 🖤
+
 # dioxus-feather-icons
 
 **Feather Icons for Dioxus** — Inline SVG icons packaged for seamless use in [Dioxus](https://dioxuslabs.com/) apps. This crate provides ergonomic macros to embed [Feather Icons](https://feathericons.com/) in your UI with no runtime cost.
