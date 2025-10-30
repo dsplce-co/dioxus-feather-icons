@@ -22,7 +22,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-dioxus-feather-icons = "0.2.3"
+dioxus-feather-icons = "0.2"
 ```
 This crate requires Rust 2024 edition.
 
@@ -55,7 +55,7 @@ Avoid injecting it into `<head>` — inline SVGs are render-blocking when placed
 Use the `icon!` macro to render a Feather icon inline. It supports progressively more customization:
 
 **✅ Basic usage (inherits text color, 24px size by default):**
-```rust 
+```rust
 use dioxus::prelude::*;
 use dioxus_feather_icons::prelude::*;
 
@@ -68,7 +68,7 @@ fn App() -> Element {
 
 **🎨 Set a specific size:**
 
-```rust 
+```rust
 icon!(alert_circle, 48)
 ```
 
